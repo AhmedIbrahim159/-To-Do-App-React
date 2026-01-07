@@ -21,7 +21,7 @@ function App() {
     .then(res=>res.json())
     .then(data => setTodos(data))
   }, [])
-  const toggleمTask = (id) => {
+  const toggleTask = (id) => {
     const updatedTodos = todos.map((todo) => {
       if (todo.id === id) {
         return { ...todo, completed: !todo.completed }
